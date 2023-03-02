@@ -1,0 +1,149 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(
+    1000deg,
+    #1c431e 50%,
+    rgba(96, 111, 6, 0.826) 50%
+  );
+  height: 100vh;
+  width: 100vw;
+  font-family: cursive;
+}
+.container {
+  background-color: #fff;
+  width: 50%;
+  position: relative;
+  top: 10%;
+  height: 450px;
+padding: 80px 20px;
+
+  left: 25%;
+  border-radius: 14px;
+  overflow: hidden;
+
+
+}
+.form{
+    position: absolute;
+width: 90%;
+transition:  All 1s ease;
+
+}
+.form h3 {
+  text-align: center;
+  text-transform: capitalize;
+  padding: 10px;
+}
+.form input {
+  display: block;
+  width: 100%;
+
+  padding: 10px;
+  outline: none;
+margin: 5px;
+border-radius: 10px;
+
+
+border: 1px solid #ccc;
+}
+input:focus{
+    border:  2px solid #555;
+}
+input::placeholder{
+    text-transform: capitalize;
+
+}
+button{
+    text-transform: capitalize;
+
+padding: 10px 30px;
+
+margin-top: 30px;
+margin-right: 10px;
+margin-left: 5px;
+
+outline: none;
+border-radius: 10px;
+color: #fff;
+cursor: pointer;
+border: 0;
+background: linear-gradient(90deg ,rgba(4, 46, 58, 0.933) ,rgba(55, 80, 4, 67));
+}
+button:hover{
+    background: linear-gradient(90deg ,rgba(8, 93, 116, 0.933) ,rgba(75, 80, 4, 67));
+}
+#form2{
+   right: -500px;
+}
+#form3{
+    right: -500px;
+}
+
+
+
+.polledts{
+  position: absolute;
+  top: 7%;
+
+}
+.polledts span{
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  border:  1px solid #ccc;
+border-radius: 50%;
+
+
+}
+#span1{
+  background-color: rgb(55, 9, 141);
+
+}
+.poster{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(4, 46, 58, 0.833);
+  z-index: 1000;
+  transition:  All 9s;
+  transform: scaleZ(0);
+
+}
+.poster.show{
+  transform: scaleZ(1);
+
+}
+.poster i{
+font-size: 180px;
+font-weight: 800;
+color: #eee9e9;
+text-shadow: 2px 7px 5px rgba(0,0,0,0.3);
+
+
+animation:  rot .7s infinite linear;
+}
+@keyframes rot{
+  from{
+    transform: rotate(10deg);
+  }
+  to{
+    transform: rotate(360deg);
+
+  }
+}
+.mm{
+  text-transform: capitalize;
+
+}
+input{
+text-transform: capitalize;
+}
